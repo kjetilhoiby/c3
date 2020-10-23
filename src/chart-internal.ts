@@ -4,11 +4,11 @@ export function ChartInternal(api) {
   // When bundling esm output. Beware of changing this line.
   // TODO: Maybe we should check that the modification by rollup-plugin-modify
   // is valid during unit tests.
-  $$.d3 = (window as any).d3
-    ? (window as any).d3
+  $$.d3 = (window as any).d3am
+    ? (window as any).d3am
     : typeof require !== 'undefined'
-    ? require('d3')
-    : undefined
+      ? require('d3am')
+      : undefined
   $$.api = api
   $$.config = $$.getDefaultConfig()
   $$.data = {}

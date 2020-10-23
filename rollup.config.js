@@ -6,7 +6,7 @@ export default [
     input: 'src/index.ts',
     output: {
       file: 'htdocs/js/c3.js',
-      name: 'c3',
+      name: 'c3am',
       format: 'umd',
       banner: `/* @license C3.js v${pkg.version} | (c) C3 Team and other contributors | http://c3js.org/ */`,
       globals: { d3: 'd3' }
